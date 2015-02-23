@@ -21,6 +21,7 @@ public class ListPractise {
         
         stringList.set(0,"john");
         stringList.remove(1);
+        System.out.println("");
         System.out.println("*********First Print Method :*******");
         for (int i = 0; i < stringList.size(); i++) {
             System.out.println(stringList.get(i));
@@ -29,9 +30,17 @@ public class ListPractise {
         for (String name: stringList) {
             System.out.println(name);
         }
+        System.out.println("");
         System.out.println("*****Extra Credit Print:*********");
         System.out.println("*****Third Print Method :*********");
-        
+        System.out.println("");
+        System.out.println(stringList.toString());
+        System.out.println("*****Fourth Print Method :*********");
+        System.out.println("");
+        for (Iterator<String> it = stringList.iterator(); it.hasNext();) {
+            String string = it.next();
+            System.out.println(string);   
+        }
     }
     
 }
